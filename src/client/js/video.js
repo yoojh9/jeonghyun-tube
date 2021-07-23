@@ -16,6 +16,7 @@ const play = async (videoId) => {
         const { link } = await response.json()
         //console.log('link=' + link)
         videoPlayer.firstChild.innerHTML = link
+        videoFrame[0].firstChild.src = videoFrame[0].firstChild.src + "?autoplay=1&mute=1"
         videoFrame[0].style.visibility = "visible";
         sizeBtn.style.visibility = "visible";
     }
@@ -42,7 +43,6 @@ $('.video_frame iframe').ready(function () {
         //     $('.video_frameiframe').css('pointer-events', 'auto');
         // }
     });
-
 });
 
 

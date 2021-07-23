@@ -44,6 +44,7 @@ export const getVideo = async (id) => {
             key: API_KEY,
             id: id,
             part: 'player,snippet',
+            autoplay: 1,
         }
 
         let res = await axios(options)
