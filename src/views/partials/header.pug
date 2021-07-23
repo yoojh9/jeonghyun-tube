@@ -1,0 +1,35 @@
+header
+    a(href="/").header__logo
+        i.fab.fa-youtube
+    form(method="GET").search__form
+        input(placeholder="검색할 키워드를 입력해주세요",name="keyword", type="text" value=keyword)
+        button
+            i.fas.fa-search
+    nav
+        ul
+            //- li
+            //-     a(href="/search")
+                    i.fas.fa-search
+            //- if loggedIn
+            //-     li
+            //-         a(href="/videos/upload") Upload Video
+            //-     li
+            //-         a(href="/users/edit") Edit Profile
+            //-     li
+            //-         a(href="/users/logout")  Log Out
+            //-     li
+            //-         a(href=`/users/${loggedInUser._id}`)
+            //-             if loggedInUser.avatarUrl === ""
+            //-                 span 😀
+            //-             else
+            //-                 if loggedInUser.avatarUrl
+            //-                     if loggedInUser.avatarUrl.includes("github")
+            //-                         img.header__avatar(src=loggedInUser.avatarUrl)
+            //-                     else
+            //-                         img.header__avatar(src=loggedInUser.avatarUrl)
+            //- else
+            //-     li
+            //-         a(href="/login")  Login                        
+            //-     li
+            //-         a(href="/join").header__btn  Join
+            

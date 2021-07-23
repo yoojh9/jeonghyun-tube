@@ -1,0 +1,25 @@
+extends base
+include mixins/video 
+
+block content
+    
+    div.video-content
+        div.video-paging
+            a#prev-btn
+                i.fas.fa-angle-double-left
+
+        div.video-grid
+            each video, index in videos
+                +video(video)
+            else
+                span.empty__message No videos found
+        
+        div.video-paging
+            a#next-btn
+                i.fas.fa-angle-double-right
+
+    include player
+
+block scripts
+    script(src="/static/js/paging.js")
+    script(src="/static/js/video.js")

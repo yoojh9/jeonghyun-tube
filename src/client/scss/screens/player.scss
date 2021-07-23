@@ -1,0 +1,28 @@
+#videoContainer{ 
+  width: 100%;
+  text-align: center;
+  margin: 30px 0;
+
+  .video_frame {
+    display: inline-block;
+    visibility: hidden;
+    height: 300px;
+    width: 450px;
+    resize: both;
+    overflow: auto;
+
+    iframe {
+      // resize: both;
+      // overflow: auto;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  #sizeBtn {
+    visibility: hidden;
+    margin-left: 10px;
+  }
+
+}
+  

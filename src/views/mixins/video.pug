@@ -1,0 +1,8 @@
+mixin video( video = {} )
+    a.video-mixin(href="javascript:void(0)")
+        input(type="hidden", value=video.id.videoId)
+        image.video-mixin__thumb(src=video.snippet.thumbnails.medium.url, control=false)
+        div.video-mixin__data
+            span.video-mixin__title=video.snippet.title.replace(/&quot;/g, '"').replace(/&#39;/g,"'")
+            div.video-mixin__meta
+                span #{video.snippet.channelTitle}

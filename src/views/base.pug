@@ -1,0 +1,24 @@
+//- include mixins/message
+
+doctype html
+html(lang="ko")
+    head
+        title #{pageTitle} | #{siteName}
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css")
+        link(rel="stylesheet", href="/static/css/styles.css")
+        link(rel="stylesheet", href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")
+    body
+        //- if messages.error
+        //-     +message("error", messages.error)
+        //- if messages.info
+        //-     +message("info", messages.info)
+        //- if messages.success
+        //-     +message("sucess", messages.success)
+        include partials/header                
+        main
+            block content
+        include partials/footer
+    script(src="/static/js/main.js")
+    script(src="https://code.jquery.com/jquery-1.12.4.js")
+    script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
+    block scripts
