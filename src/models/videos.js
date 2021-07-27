@@ -27,7 +27,6 @@ export const videoList = async (keyword) => {
             videoDuration: "short",
         }
         let res = await axios(options)
-        console.log(JSON.stringify(res.data))
         return res.data.items
     } catch (error) {
         console.error(error)

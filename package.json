@@ -4,6 +4,7 @@
   "description": "Youtube Player Clone",
   "scripts": {
     "start": "node build/init.js",
+    "test": "jest",
     "build": "npm run build:server && npm run build:assets",
     "build:server": "babel src -d build",
     "build:assets": "webpack --mode=production",
@@ -18,8 +19,7 @@
     "express": "^4.17.1",
     "morgan": "^1.10.0",
     "node-fetch": "^2.6.1",
-    "pug": "^3.0.2",
-    "regenerator-runtime": "^0.13.7"
+    "pug": "^3.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",
@@ -29,6 +29,7 @@
     "@babel/preset-env": "^7.14.8",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.7",
+    "jest": "^27.0.6",
     "mini-css-extract-plugin": "^1.6.2",
     "nodemon": "^2.0.7",
     "sass": "^1.32.10",

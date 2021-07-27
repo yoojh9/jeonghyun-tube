@@ -33,15 +33,8 @@ $('.video_frame iframe').ready(function () {
     // $(".video_frame iframe").draggable();
     $(".video_frame").resizable({
         alsoResize: 'iframe',
-        //aspectRatio: true,
         minHeight: 200,
         minWidth: 300,
-        // start: function (event, ui) {
-        //     $('.video_frame iframe').css('pointer-events', 'none');
-        // },
-        // stop: function (event, ui) {
-        //     $('.video_frameiframe').css('pointer-events', 'auto');
-        // }
     });
 });
 
