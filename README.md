@@ -7,3 +7,8 @@
 $ npm install
 $ npm run build
 $ npm start
+
+
+## 2. 호스팅
+- https://jeonghyun-tube.herokuapp.com/
+- 
